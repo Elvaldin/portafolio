@@ -1,11 +1,77 @@
 ---
 import Welcome from '../components/Welcome.astro';
 import Layout from '../layouts/Layout.astro';
+import "../styles/global.css";
+
 
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
 // Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
 
-<Layout>
-	<Welcome />
+<Layout title="Mi portafolio">
+
+	<nav class="navbar">
+		<h2> Oswaldo.dev </h2>
+		<div>
+			<a href="#sobre"> Sobre mí </a>
+			<a href="#proyectos"> Proyectos </a>
+			<a href="#contacto"> Contacto </a>
+			<a href="#habilidades"> Habilidades </a>
+		</div>
+	</nav>
+
+	  <section class="hero">
+		<h1>Hola, soy Jose Oswaldo</h1>
+		<p>Desarrollador enfocado en crear aplicaciones modernas, rápidas y funcionales.
+			Actualmente construyendo soluciones como Mayorin, una app orientada a adultos mayores.</p>
+			<button onclick="window.location='#proyectos'"> Ver mis proyectos </button> 
+		<div class="hero-socials">
+			<a href="https://github.com/Elvaldin" target="_blank"> GitHub </a>
+			<a href="https://linkedin.com/in/jose-oswaldo-mora-rodriguez-9ab11436a/" target="_blank"> LinkedIn </a>
+		</div>
+		</section>
+	  
+	  <section id="sobre" class="card">
+		<h2> Sobre mí </h2>
+		<p>Soy un estudiante de ingeniería en sistemas, me apasiona la tecnología. 
+			Actualmente en la escuela estamos creando un proyecto en equipo: una aplicación móvil
+			que se va a llamar Mayorin</p>
+	  </section>
+
+	  <section id="proyectos" class="card">
+		<h2> Proyectos </h2>
+
+		<div class ="projects">
+			<div class ="project featured">
+					<h3> Mayorin App</h3>
+					<p>Es una aplicación móvil que se está desarrollando en equipo de la universidad, 
+						esta aplicacion esta orientada hacía los adultos mayores</p>
+
+					<small> Tecnologías: Java, OOP, NetBeans </small>
+
+					<a href="https://github.com/Elvaldin" target="_blank" class="btn"> Ver código </a>
+			</div>
+		</div>
+	  </section>
+
+
+	  <section id="habilidades" class="card">
+		<h2> Habilidades </h2>
+			<div class="skills">
+				<span> Astro </span>
+				<span> Java </span>
+				<span> C# </span>
+			</div>
+	  </section>
+
+	  <section id="contacto" class="card">
+		<h2> Contacto </h2>
+		<p> email: oswalmora.mora@icloud.com </p>
+
+		<div class="socials">
+			<a href="https://github.com/Elvaldin" target="_blank"> GitHub </a>
+			<a href="https://linkedin.com/in/jose-oswaldo-mora-rodriguez-9ab11436a/" target="_blank"> LinkedIn </a>
+			<a href="https://www.instagram.com/o_0632/" target="_blank"> Instagram </a>
+		</div>
+	  </section>
 </Layout>
